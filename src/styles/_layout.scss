@@ -1,0 +1,70 @@
+.container {
+	width: 100%;
+	margin: auto;
+	padding-bottom: 50px;
+	@media (min-width: 1024px) {
+		width: 968px;
+	}
+}
+md-content {
+	@extend %clearfix;
+}
+.md-wrapper {
+	box-sizing: border-box;
+	padding: 8px;
+	@extend %clearfix;
+	width: 100%;
+	float: left;
+	margin: 0;
+	height: auto;
+	@media (min-width: 768px) {
+		width: 50%;
+		height: 600px;
+	}
+	@media (min-width: 1024px) {
+		width: 33%;
+		height: 500px;
+	}
+	&.single-image {
+		width: 100%;
+		max-width: 600px;
+		height: auto;
+		float: none;
+		margin: auto;
+		@media (min-width: 768px) {
+			width: 100%;
+		}
+		@media (min-width: 1024px) {
+			width: 100%;
+		}
+	}
+}
+md-card {
+	margin: 0;
+}
+h2, .md-button {
+	color: initial;
+}
+h2:hover {
+	text-decoration: underline;
+}
+
+.fabToolbardemoBasicUsage md-fab-toolbar.md-left md-fab-trigger.align-with-text {
+  left: 7px; 
+}
+
+.md-fab-toolbar-wrapper {
+	height: auto!important;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: rgb(63,81,181);
+	bottom: 0;
+}
+
+svg {
+	vertical-align: top;
+}

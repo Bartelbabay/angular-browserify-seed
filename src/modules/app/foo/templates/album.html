@@ -1,0 +1,12 @@
+<div class="container"
+     style="height: 100vh; width: 100vw; position: absolute; overflow-x: hidden; overflow-y: scroll"
+     ng-infinite-scroll items="list" options="{'threshold':100, 'limit': limit, 'data': data}" ng-if="initialized == 1">
+    <div class="item" ng-repeat="item in list" page-size="10">
+        <div class="image"><a ng-href="#/image/{{item.id}}"><img src="{{item.thumbnailUrl}}" /></a></div>
+
+        <div class="album-title"><a ng-href="#/album/{{item.albumId}}">Album</a></div>
+
+        <div class="image-title"><a ng-href="#/image/{{item.id}}">{{item.title}}</a></div>
+        <hr />
+    </div>
+</div>
